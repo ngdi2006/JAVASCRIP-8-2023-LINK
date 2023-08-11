@@ -1,0 +1,12 @@
+- CSS - cascading style stylesheet: ngôn ngữ hỗ trợ thay đổi định dạng cho HTML
+- Giúp trang web trở nên đẹp đẽ hơn, thông qua việc thay đổi màu sắc, kích thước, khung viền,...
+
+- Sử dụng CSS như thế nào? => nhúng CSS vào trong trang HTML, thông qua 3 cách
+	- Mạnh nhất, trực tiếp: inline => viết trực tiếp mã CSS trên thẻ html thông qua thuộc tính style. Mọi thẻ HTML đều có thuộc tính này.
+	- Internal: sử dụng cặp thẻ style ở phần head của trang web HTML, và viết các mã CSS trong đó.
+	- External: sử dụng file CSS riêng, viết mã trong đó. Sau đó gắn vào HTML thông qua thẻ link. => hay được sử dụng trong thực tế nhất
+
+- Trong CSS, cung cấp 3 bộ chọn (selector) cơ bản, dễ thao tác nhất là:
+	- Thông qua tên thẻ: <tên thẻ> { mã CSS }
+	- Thông qua id của thẻ: #<tên id> { mã CSS }
+	- Thông qua class của thẻ: .<tên class> { mã CSS }
