@@ -1,0 +1,78 @@
+1. Giới thiệu Js
+- Ngôn ngữ JavaScript: là một ngôn ngữ lập trình, cung cấp khả năng xử lý logic, làm cho trang web trở nên sinh động, có tương tác hơn
+- Thư viện: jQuery - xử lý giao diện trang web
+- Ngôn ngữ NodeJs, TypeScript, ReactJs, VueJs
+- Sử dụng được ngôn ngữ Js, làm cho web trở nên linh động và có tương tác với người dùng, xử lý logic
+
+- Cấu thành 1 trang web: HTML + CSS + JavaScript (kết hợp 1 vài thư viện hỗ trợ khác)
+
+2. Biến - variables
+- Biến - Variables: là tên gọi định danh cho 1 vùng chứa dữ liệu
+- Khai báo biến:
+	+ let : dùng để khai báo biến cục bộ
+		+ biến cục bộ sẽ khai báo 1 lần trong 1 khối, không khai báo lại, chỉ sử dụng trong khối đó
+		+ dễ kiểm soát, khi không được sử dụng nữa nó sẽ bị xóa đi
+	+ var : dùng để khai báo biến toàn cục
+		+ biến toàn cục sẽ khai báo nhiều lần, có thể khai báo lại, sử dụng trong toàn bộ chương trình
+		+ chiếm dụng bộ nhớ nhiều hơn, khó kiểm soát việc khai báo
+	+ const : dùng để khai báo hằng số => khai báo 1 biến có giá trị cố định, không thay đổi
+- Cú pháp:
+	+ từ khóa khai báo + <tên biến> + dấu bằng + giá trị
+		=> hành động khai báo và gán giá trị cho biến
+	+ từ khóa khai báo + <tên biến>
+		=> hành động khai báo 
+Vd: 	let number = 10
+	let str
+
+3. Kiểu dữ liệu - data type
+- KDL: là định danh của giá trị của biến
+- 2 nhóm KDL: nguyên thủy, tham chiếu
+- 7 KDL chi tiết:
+	+ number : 1,2,3,4
+	+ string : "a", "abc", "23"
+	+ boolean : true (đúng) / false (sai)
+	+ null : không tồn tại 
+	+ undefined : không xác định
+	+ symbol
+	+ object : kiểu đối tượng (đây là kiểu dữ liệu duy nhất của dạng tham chiếu)
+
+4. Nhúng Js vào HTML
+- 3 cách nhúng:
+	+ inline: rất ít gặp (viết trực tiếp mã Js vào thẻ HTML)
+	+ internal: dùng cặp thẻ script trong trang HTML (thường ở cuối trang, sau thẻ body đóng)
+	+ external: dùng file .js để viết mã Js và dẫn link vào HTML thông qua thẻ script
+
+5. Toán tử - operator : là ký hiệu, dùng để nối và thao tác với các toán hạng (biến), cấu thành nên biểu thức trong lập trình, hỗ trợ ltv xử lý logic của bài toán 
+- Toán học : + - * / mod(%) => số
+	- 5 + 6 => 11
+- Gán : =
+	- Trong lập trình, dấu bằng sẽ thể hiện cho phép gán, không phải là so sánh hay kết quả biểu thức 
+- Cộng chuỗi : (+) => y/c: 1 trong 2 toán hạng sẽ phải là chuỗi 
+- So sánh : 
+	- nhỏ hơn (<)
+	- nhỏ hơn bằng (<=)
+	- lớn hơn (>)
+	- lớn hơn bằng (>=)
+	- bằng (==)|(===)
+	- không bằng (khác, != và !==)
+- Logic : and or not
+	- and (và) : &&
+	- or (hoặc) : ||
+	- not (phủ định) : !
+- Type of : trả về kiểu dữ liệu của biến
+	- let a = 5 => typeof(a) <==> number
+	- let b = "abc" => typeof(b) <==> string
+
+6. Nhập xuất dữ liệu trong Js
+- Khi ltv thiết kế có tính năng nhập dữ liệu, dữ liệu đó truyền vào Js, xuất dữ liệu từ Js ra màn hình 
+	- Nhập liệu: 
+		- Sử dụng thẻ input của HTML
+			- Lấy dữ liệu: document.getElementById( "mã id của input" ).value
+		- Sử dụng hàm prompt() của Js
+			- Nhập liệu trên hộp thoại
+	- Xuất dữ liệu:
+		- hàm alert() : dữ liệu hiện thị dạng hộp thoại (dialog box)
+		- document.write()
+		+ document.getElementById( "mã id của thẻ HTML" ).innerText
+		+ document.getElementById( "mã id của thẻ HTML" ).innerHTML
+		- console.log() : dữ liệu hiển thị trong log của trình duyệt 

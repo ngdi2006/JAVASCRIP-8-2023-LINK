@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tính diện tích và chu vi hình chữ nhật</title>
+</head>
+<body>
+    <label for="chieuDai">Chiều dài:</label>
+    <input type="number" id="chieuDai">
+    <br>
+    <label for="chieuRong">Chiều rộng:</label>
+    <input type="number" id="chieuRong">
+    <br>
+    <button onclick="tinhVaHienThi()">Tính</button>
+    <br>
+    <h1 id="dienTichResult"></h1>
+    <h2 id="chuViResult"></h2>
+
+    <script>
+        function tinhDienTichHinhChuNhat(chieuDai, chieuRong) {
+            return chieuDai * chieuRong;
+        }
+
+        function tinhChuViHinhChuNhat(chieuDai, chieuRong) {
+            return 2 * (chieuDai + chieuRong);
+        }
+
+        function tinhVaHienThi() {
+            var chieuDai = parseFloat(document.getElementById("chieuDai").value);
+            var chieuRong = parseFloat(document.getElementById("chieuRong").value);
+
+            var dienTich = tinhDienTichHinhChuNhat(chieuDai, chieuRong);
+            var chuVi = tinhChuViHinhChuNhat(chieuDai, chieuRong);
+
+            document.getElementById("dienTichResult").innerHTML = "Diện tích hình chữ nhật là: " + dienTich;
+            document.getElementById("chuViResult").innerHTML = "Chu vi hình chữ nhật là: " + chuVi;
+        }
+    </script>
+</body>
+</html>
