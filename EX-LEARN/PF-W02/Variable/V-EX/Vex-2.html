@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài tập 2</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Bán kính:</td>
+            <td><input type="text" id="r"></td>
+
+        </tr>
+        <tr>
+            <td>Đường kính:</td>
+            <td id="d"></td>
+        </tr>
+        <tr>
+            <td>chu vi:</td>
+            <td id="cv"></td>
+        </tr>
+        <tr>
+            <td>diện tích:</td>
+            <td id="dt"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button onclick="m1()">click me</button></td>
+        </tr>
+    </table>
+    
+</body>
+<script>
+    function m1() {
+        let r = +document.getElementById("r").value
+        let d = r * 2
+        let cv = r * 2 * Math.PI
+        let dt = r * r * Math.PI
+
+       document.getElementById("d").innerHTML = d
+       document.getElementById("cv").innerHTML = cv.toFixed(3)
+       document.getElementById("dt").innerHTML = dt.toFixed(3)
+    }
+
+</script>
+</html>
