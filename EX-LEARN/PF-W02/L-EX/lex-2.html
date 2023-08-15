@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>tôi đang học javascript</h2>
+
+<p id="demo1" >khi ấn vào click thì bị ẩn dòng này</p>
+<p id="demo2" style="display:none" >dòng này bị ẩn khi click vào sẽ hiển thị</p>
+
+<button type="button" onclick="m1()">click 1 </button> <br> <hr>
+<button type="button" onclick="m2()">click 2</button>
+</body>
+<script>
+
+    function m1() {    
+    document.getElementById('demo1').style.display='none'
+   }
+
+   function m2 () {
+    document.getElementById('demo2').style.display='block'
+   }
+</script>
+</html>
